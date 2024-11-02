@@ -1,4 +1,4 @@
-# exit
+# exit-x
 
 Fork of unmaintained https://github.com/cowboy/node-exit
 

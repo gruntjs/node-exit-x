@@ -1,5 +1,5 @@
 {
-  "name": "exit",
+  "name": "exit-x",
   "description": "A replacement for process.exit that ensures stdio are fully drained before exiting.",
   "version": "0.2.0",
   "homepage": "https://github.com/cowboy/node-exit",
