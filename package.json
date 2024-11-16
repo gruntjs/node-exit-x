@@ -2,17 +2,18 @@
   "name": "exit-x",
   "description": "A replacement for process.exit that ensures stdio are fully drained before exiting.",
   "version": "0.2.1",
-  "homepage": "https://github.com/cowboy/node-exit",
+  "homepage": "https://github.com/gruntjs/node-exit-x",
   "author": "Grunt Development Team (https://gruntjs.com/development-team)",
   "repository": {
     "type": "git",
     "url": "git://github.com/gruntjs/node-exit-x.git"
   },
   "bugs": {
-    "url": "https://github.com/gruntjs/node-exit/issues"
+    "url": "https://github.com/gruntjs/node-exit-x/issues"
   },
   "license": "MIT",
-  "main": "lib/exit",
+  "main": "lib/exit.js",
+  "types": "lib/exit.d.ts",
   "engines": {
     "node": ">= 0.8.0"
   },
