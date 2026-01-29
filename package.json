@@ -15,18 +15,14 @@
   "main": "lib/exit.js",
   "types": "lib/exit.d.ts",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 10"
   },
   "scripts": {
-    "test": "grunt nodeunit"
+    "test": "jshint . && qunit test/exit_test.js"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-cli": "^1.5.0",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "which": "~1.0.5"
+    "jshint": "~2.13.6",
+    "qunit": "~2.25.0"
   },
   "keywords": [
     "exit",

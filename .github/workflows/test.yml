@@ -6,30 +6,32 @@ env:
   FORCE_COLOR: 2
 
 jobs:
-  run:
-    name: Node ${{ matrix.node }} on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-
+  tests:
     strategy:
       fail-fast: false
       matrix:
-        node: [20]
-        os: [ubuntu-latest, windows-latest]
+        node: [10, 12, 20, 22]
+        # Node 10-20 are not available on ARM, use macos-15-intel instead
+        os: [ubuntu-latest, macos-15-intel, windows-latest]
+        include:
+          - os: macos-latest
+            node: 22
+
+    name: Node ${{ matrix.node }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Install npm dependencies
-        run: npm i
+      - run: npm install
 
-      - name: Run tests
-        run: npm test
+      - run: npm test
 
       # We test multiple Windows shells because of prior stdout buffering issues
       # filed against Grunt. https://github.com/joyent/node/issues/3584

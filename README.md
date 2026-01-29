@@ -1,3 +1,5 @@
+[![Tested with QUnit](https://qunitjs.com/testedwith.svg)](https://qunitjs.com/)
+
 # exit-x
 
 Fork of unmaintained https://github.com/cowboy/node-exit
@@ -8,7 +10,7 @@ To make a long story short, if `process.exit` is called on Windows, script outpu
 
 See [Node.js issue #3584](https://github.com/joyent/node/issues/3584) for further reference.
 
-Tested in OS X 10.8, Windows 7 on Node.js 0.8.25 and 0.10.18.
+Tested with Node.js 10+ on Linux, macOS, and Windows.
 
 Based on some code by [@vladikoff](https://github.com/vladikoff).
 
