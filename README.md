@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/gruntjs/node-exit-x/actions/workflows/test.yml/badge.svg)](https://github.com/gruntjs/node-exit-x/actions/workflows/test.yml)
+[![npm](https://img.shields.io/npm/v/exit-x.svg?style=flat)](https://www.npmjs.com/package/exit-x)
 [![Tested with QUnit](https://qunitjs.com/testedwith.svg)](https://qunitjs.com/)
 
 # exit-x
