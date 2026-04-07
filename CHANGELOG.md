@@ -8,7 +8,7 @@
 
 2014-11-02
 
-- Forked from https://github.com/cowboy/node-exit ([#1](https://github.com/gruntjs/node-exit-x/pull/1)), [#2](https://github.com/gruntjs/node-exit-x/pull/2))
+- Forked from https://github.com/cowboy/node-exit ([#1](https://github.com/gruntjs/node-exit-x/pull/1)), [#2](https://github.com/gruntjs/node-exit-x/pull/2)) in order to release the licence metadata fix ([cowboy#18](https://github.com/cowboy/node-exit/pull/18))
 
 ## v0.1.2
 
